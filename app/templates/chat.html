@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA Jack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="chat-container">
+        <nav>
+            <h1>TA.JACK 🤠 <span class="hearts">🩵🩵🩵🩵🩵</span></h1>
+        </nav>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <p class="bot-name"><strong>Jack</strong></p>
+                <p class="message-text">
+                    Howdy, partner! I'm Tejano Jack, the finest debugger this side of the border. 
+                    When you're stuck, just holler, and I'll help ya think through it—kinda like rubberduckin', but with more Tex-Mex flair.  
+                    Now, I ain't always right, so use that big ol’ brain of yours and call me out if I mess up. 🤠  
+                </p>
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask a question..." autocomplete="off">
+            <button type="submit">➤</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>
